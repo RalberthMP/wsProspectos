@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSprospectos", "AppVentasService\WSprospectos.csproj", "{556917C8-061F-4D29-9537-9BB2494FD1E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{556917C8-061F-4D29-9537-9BB2494FD1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556917C8-061F-4D29-9537-9BB2494FD1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556917C8-061F-4D29-9537-9BB2494FD1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556917C8-061F-4D29-9537-9BB2494FD1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D43891E-53E5-49DA-9C28-B5CB94FC4DE4}
+	EndGlobalSection
+EndGlobal
