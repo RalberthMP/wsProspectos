@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.375, 16.25" name="EmbarquesAppModel">
+  <DataContextMoniker Name="/EmbarquesAppModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="586e2cc1-2865-4959-8c20-8620feae8b47" absoluteBounds="6.75, 2.625, 2.625, 5.0400211588541657">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/Muestra" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fa72414-a7a4-4c74-9c10-de40a8f773b0" absoluteBounds="6.765, 3.085, 2.5949999999999998, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9633ead3-bf93-4f63-a810-0b3f13dab570" absoluteBounds="1.75, 3.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/MuestraDetalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a014857-a31a-4d1d-9bd2-c8280386f064" absoluteBounds="1.7650000000000001, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 4.26044840494792); (3.75 : 4.26044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Muestra/Muestra_MuestraDetalle" />
+      <nodes>
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+        <classShapeMoniker Id="9633ead3-bf93-4f63-a810-0b3f13dab570" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="49607f0c-067a-4920-805d-e9824575dcd6" absoluteBounds="1.25, 9.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/MuestraDetalleTamaño" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e6f9143-40ce-4d39-b8a5-c57cbd74c749" absoluteBounds="1.2649999999999997, 9.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.81249875 : 7.66502115885417); (7.81249875 : 10.3116682942708); (3.25 : 10.3116682942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Muestra/Muestra_MuestraDetalleTamaño" />
+      <nodes>
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+        <classShapeMoniker Id="49607f0c-067a-4920-805d-e9824575dcd6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="45f46a1f-4a1c-48cb-ac6a-29851d36e8cc" absoluteBounds="1.375, 6.375, 2.25, 2.3478011067708326">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/MuestraFoto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62e12598-24e4-4952-bfad-03348cd3ff9f" absoluteBounds="1.39, 6.835, 2.2199999999999998, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 7.02001057942708); (3.625 : 7.02001057942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Muestra/Muestra_MuestraFoto" />
+      <nodes>
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+        <classShapeMoniker Id="45f46a1f-4a1c-48cb-ac6a-29851d36e8cc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4e4088c0-0b66-434c-820b-87dc295c9043" absoluteBounds="9.875, 0.75, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/Producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10d24355-fce1-4e73-b55b-11566816bce5" absoluteBounds="9.89, 1.21, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.875 : 4.20751057942708); (9.375 : 4.20751057942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Producto/Producto_Muestra" />
+      <nodes>
+        <classShapeMoniker Id="4e4088c0-0b66-434c-820b-87dc295c9043" />
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2155fbb8-670c-4be7-a4b8-aedcc053ba22" absoluteBounds="9.75, 10.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/MuestraCarga" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bbb8c0c-a3da-4a44-a34c-49068bd0deb0" absoluteBounds="9.765, 10.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.625001375 : 7.66502115885417); (8.625001375 : 11.1642976888021); (9.75 : 11.1642976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Muestra/Muestra_MuestraCarga" />
+      <nodes>
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+        <classShapeMoniker Id="2155fbb8-670c-4be7-a4b8-aedcc053ba22" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4d4af298-af62-4f22-a130-b2ff5ecf424b" absoluteBounds="9.75, 14.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/MuestraDetalleColor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebc8bf9e-0cc7-4cab-ae5f-bffe2c6d6cf7" absoluteBounds="9.765, 14.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.249996875 : 7.66502115885417); (7.249996875 : 15.1642976888021); (9.75 : 15.1642976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Muestra/Muestra_MuestraDetalleColor" />
+      <nodes>
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+        <classShapeMoniker Id="4d4af298-af62-4f22-a130-b2ff5ecf424b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="449b61aa-b9a9-442f-a876-4a8baa8666a8" absoluteBounds="11.125, 6.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EmbarquesAppModelDataContext/TarimasCarga" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8811811a-5226-44df-83a6-4d9b5cd53666" absoluteBounds="11.14, 7.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.375 : 6.20751057942708); (12.53125 : 6.20751057942708); (12.53125 : 6.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EmbarquesAppModelDataContext/Muestra/Muestra_TarimasCarga" />
+      <nodes>
+        <classShapeMoniker Id="586e2cc1-2865-4959-8c20-8620feae8b47" />
+        <classShapeMoniker Id="449b61aa-b9a9-442f-a876-4a8baa8666a8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

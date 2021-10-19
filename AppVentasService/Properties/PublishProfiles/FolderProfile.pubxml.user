@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\rmendoza\Desktop\Bodega</_PublishTargetUrl>
+    <History>True|2021-10-01T18:24:52.9614921Z;True|2021-09-30T16:39:33.7163578-06:00;True|2021-09-24T09:53:31.7532123-06:00;True|2021-09-24T09:52:50.2326930-06:00;True|2021-09-24T09:38:27.8524042-06:00;True|2021-09-24T09:33:40.3897737-06:00;True|2021-09-24T08:27:08.4747805-06:00;True|2021-09-23T16:26:11.4924766-06:00;True|2021-08-24T08:33:12.9030251-06:00;True|2021-08-24T08:28:50.0137240-06:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api.ashx">
+      <publishTime>08/24/2021 09:43:08</publishTime>
+    </File>
+    <File Include="bin/Agility.Sdk.Model.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/Agility.Server.Common.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/Agility.Server.Core.Model.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/Agility.Server.Integration.Common.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/Agility.Server.Integration.Model.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/Agility.Server.Scripting.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/AppBodegaService.dll">
+      <publishTime>10/01/2021 12:24:51</publishTime>
+    </File>
+    <File Include="bin/AppBodegaService.pdb">
+      <publishTime>10/01/2021 12:24:51</publishTime>
+    </File>
+    <File Include="bin/AppVentasService.dll">
+      <publishTime>08/24/2021 08:28:48</publishTime>
+    </File>
+    <File Include="bin/AppVentasService.pdb">
+      <publishTime>08/24/2021 08:28:48</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.CrystalReports.Engine.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportSource.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Shared.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/cs/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/cs/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/cs/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/da/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/da/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/da/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/de/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/de/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/de/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/en/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/en/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/en/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/es/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/es/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/es/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/fi/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/fi/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/fi/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/fr/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/fr/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/fr/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/hu/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/hu/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/hu/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/it/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/it/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/it/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ja/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ja/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ja/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ko/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ko/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ko/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>06/01/2011 14:24:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.ServiceRuntime.dll">
+      <publishTime>09/01/2019 16:37:16</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>06/24/2021 11:44:06</publishTime>
+    </File>
+    <File Include="bin/nb-NO/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/nb-NO/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/nb-NO/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/nl/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/nl/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/nl/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/pl/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/pl/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/pl/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/pt/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/pt/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/pt/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ru/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ru/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/ru/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/sk/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/sk/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/sk/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/sv/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/sv/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/sv/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/th/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/th/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/th/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/TotalAgility.Sdk.dll">
+      <publishTime>06/23/2021 16:41:03</publishTime>
+    </File>
+    <File Include="bin/tr/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/tr/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/tr/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/WindowsAzureEventSource.dll">
+      <publishTime>09/01/2019 16:37:16</publishTime>
+    </File>
+    <File Include="bin/WindowsAzureTelemetryEvents.dll">
+      <publishTime>09/01/2019 16:37:16</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/CrystalDecisions.CrystalReports.Engine.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/CrystalDecisions.ReportSource.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/CrystalDecisions.Shared.resources.dll">
+      <publishTime>05/27/2020 09:53:04</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/24/2021 09:01:32</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>08/24/2021 09:01:32</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/28/2021 16:48:03</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/30/2021 16:39:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

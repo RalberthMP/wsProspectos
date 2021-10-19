@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TripleHBpm3" Class="EmbarquesAppModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=serverdb;Initial Catalog=TripleHBpm3;User ID=sa;Password=Pomodoro92%" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Muestra" Member="Muestras">
+    <Type Name="Muestra">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoCultivo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoTamaño" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoColor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Marca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UnidadesMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoTipoMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Peso" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="CantidadUnidades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoLoteProceso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="pesoEvaluado" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="CodigoRecepcionProduce" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoMuestraCampo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoProducto" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CodigoTextura" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoCarga" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nota" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FechaHoraModificacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CodigoAgricultor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoPallet" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CodigoHeroku" Type="System.String" DbType="nvarchar(40)" CanBeNull="true" />
+      <Association Name="Muestra_MuestraDetalle" Member="MuestraDetalles" ThisKey="Codigo" OtherKey="CodigoMuestra" Type="MuestraDetalle" />
+      <Association Name="Muestra_MuestraDetalleTamaño" Member="MuestraDetalleTamaños" ThisKey="Codigo" OtherKey="CodigoMuestra" Type="MuestraDetalleTamaño" />
+      <Association Name="Muestra_MuestraFoto" Member="MuestraFotos" ThisKey="Codigo" OtherKey="CodigoMuestra" Type="MuestraFoto" />
+      <Association Name="Muestra_MuestraCarga" Member="MuestraCargas" ThisKey="Codigo" OtherKey="CodigoMuestra" Type="MuestraCarga" />
+      <Association Name="Muestra_MuestraDetalleColor" Member="MuestraDetalleColors" ThisKey="Codigo" OtherKey="CodigoMuestra" Type="MuestraDetalleColor" />
+      <Association Name="Muestra_TarimasCarga" Member="TarimasCargas" ThisKey="Codigo" OtherKey="CodigoMuestra" Type="TarimasCarga" />
+      <Association Name="Producto_Muestra" Member="Producto" ThisKey="CodigoProducto" OtherKey="ItemCode" Type="Producto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MuestraDetalle" Member="MuestraDetalles">
+    <Type Name="MuestraDetalle">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoDefecto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoSeveridad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Muestra_MuestraDetalle" Member="Muestra" ThisKey="CodigoMuestra" OtherKey="Codigo" Type="Muestra" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MuestraDetalleTamaño" Member="MuestraDetalleTamaños">
+    <Type Name="MuestraDetalleTamaño">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoTamaño" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CantidadFueraRango" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Muestra_MuestraDetalleTamaño" Member="Muestra" ThisKey="CodigoMuestra" OtherKey="Codigo" Type="Muestra" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MuestraFoto" Member="MuestraFotos">
+    <Type Name="MuestraFoto">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreArchivo" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreArchivoOriginal" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="MimeType" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoArchivo" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoHeroku" Type="System.String" DbType="nvarchar(40)" CanBeNull="true" />
+      <Association Name="Muestra_MuestraFoto" Member="Muestra" ThisKey="CodigoMuestra" OtherKey="Codigo" Type="Muestra" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Producto" Member="Productos">
+    <Type Name="Producto">
+      <Column Name="ItemCode" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ItmsGrpCod" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="U_TipoProd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="U_Cultivo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SWeight1" Type="System.Decimal" DbType="Decimal(19,6)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="InvntryUom" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="U_Envase" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="U_Tamanio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="U_Color" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="U_Etiqueta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="U_Presentacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreProduce" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CodeBars" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="U_CajasNacional" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="U_CajasExportacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="U_TASAIVA" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CodigoProductoSAP" Type="System.String" DbType="NVarChar(112)" CanBeNull="true" />
+      <Column Name="Inactivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProductoEspecial" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Producto_Muestra" Member="Muestras" ThisKey="ItemCode" OtherKey="CodigoProducto" Type="Muestra" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MuestraCarga" Member="MuestraCargas">
+    <Type Name="MuestraCarga">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoCarga" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoHeroku" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Association Name="Muestra_MuestraCarga" Member="Muestra" ThisKey="CodigoMuestra" OtherKey="Codigo" Type="Muestra" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MuestraDetalleColor" Member="MuestraDetalleColors">
+    <Type Name="MuestraDetalleColor">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoMuestra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoColor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Muestra_MuestraDetalleColor" Member="Muestra" ThisKey="CodigoMuestra" OtherKey="Codigo" Type="Muestra" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TarimasCarga" Member="TarimasCargas">
+    <Type Name="TarimasCarga">
+      <Column Name="CodigoCarga" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoColor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroTarimas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRecepcion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodigoMuestra" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoAgricultor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Muestra_TarimasCarga" Member="Muestra" ThisKey="CodigoMuestra" OtherKey="Codigo" Type="Muestra" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
